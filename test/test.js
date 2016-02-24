@@ -10,7 +10,7 @@ class Test extends Samsung {
   sendToDevice(command) {
     this.processing = true;
 
-    console.log(command);
+    this.log('sending: ' + command);
 
     let self = this;
     //Success, process next
@@ -57,10 +57,10 @@ remote.back();
 remote.exit();
 remote.enter();
 
-remote.colours('red');
-remote.colours('green');
-remote.colours('yellow');
-remote.colours('blue');
+remote.colour('red');
+remote.colour('green');
+remote.colour('yellow');
+remote.colour('blue');
 
 remote.transport('play');
 remote.transport('pause');

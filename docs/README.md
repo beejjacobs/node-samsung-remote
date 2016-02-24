@@ -24,6 +24,7 @@ Samsung Remote class
         * [.volume(up)](#SamsungRemote+volume)
         * [.mute()](#SamsungRemote+mute)
         * [.channel(up)](#SamsungRemote+channel)
+        * [.previousChannel()](#SamsungRemote+previousChannel)
         * [.arrow(direction)](#SamsungRemote+arrow)
         * [.smartHub()](#SamsungRemote+smartHub)
         * [.menu()](#SamsungRemote+menu)
@@ -35,6 +36,8 @@ Samsung Remote class
         * [.enter()](#SamsungRemote+enter)
         * [.colour(colour)](#SamsungRemote+colour)
         * [.transport(command)](#SamsungRemote+transport)
+        * [.tv()](#SamsungRemote+tv)
+        * [.hdmi()](#SamsungRemote+hdmi)
         * [.send(command)](#SamsungRemote+send)
         * [.processBuffer()](#SamsungRemote+processBuffer)
         * [.sendToDevice(command)](#SamsungRemote+sendToDevice)
@@ -154,6 +157,9 @@ Channel up/down
 | --- | --- | --- |
 | up | <code>boolean</code> | true for next channel, false for previous |
 
+<a name="SamsungRemote+previousChannel"></a>
+### samsungRemote.previousChannel()
+**Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
 <a name="SamsungRemote+arrow"></a>
 ### samsungRemote.arrow(direction)
 Arrow keys
@@ -208,6 +214,12 @@ Transport keys
 | --- | --- | --- |
 | command | <code>string</code> | play, pause, stop, record, forward, backward, skip-forward, skip-backward |
 
+<a name="SamsungRemote+tv"></a>
+### samsungRemote.tv()
+**Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
+<a name="SamsungRemote+hdmi"></a>
+### samsungRemote.hdmi()
+**Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
 <a name="SamsungRemote+send"></a>
 ### samsungRemote.send(command)
 Add to the command buffer
@@ -269,7 +281,7 @@ Log to console.error if this.debug is true
 **Kind**: static property of <code>[SamsungRemote](#SamsungRemote)</code>  
 <a name="SamsungRemote.keys"></a>
 ### SamsungRemote.keys : <code>object</code>
-Known/tested keys:<table>  <tr><th>Object Key</th><th>Description</th></tr>  <tr><td>NUM_0 - NUM_9</td><td>Numbers</td></tr>  <tr><td>W_LINK</td><td>Smart Hub</td></tr>  <tr><td>VOLUP, VOLDOWN</td><td>Volume</td></tr>  <tr><td>MUTE</td><td>Mute</td></tr>  <tr><td>CHUP, CHDOWN</td><td>Channel</td></tr>  <tr><td>LEFT, RIGHT, UP, DOWN</td><td>Arrow keys</td></tr></table>
+Known/tested keys:<table>  <tr><th>Object Key</th><th>Description</th></tr>  <tr><td>NUM_0 - NUM_9</td><td>Numbers</td></tr>  <tr><td>W_LINK</td><td>Smart Hub</td></tr>  <tr><td>VOLUP, VOLDOWN</td><td>Volume</td></tr>  <tr><td>MUTE</td><td>Mute</td></tr>  <tr><td>CHUP, CHDOWN</td><td>Channel</td></tr>  <tr><td>CH_LIST</td><td>Channel List</td></tr>  <tr><td>PRECH</td><td>Previous Channel</td></tr>  <tr><td>LEFT, RIGHT, UP, DOWN</td><td>Arrow keys</td></tr>  <tr><td>ENTER</td><td>Enter</td></tr>  <tr><td>EXIT</td><td>Exit</td></tr>  <tr><td>MENU</td><td>Menu</td></tr>  <tr><td>GUIDE</td><td>Guide</td></tr>  <tr><td>TOOLS</td><td>Tools</td></tr>  <tr><td>INFO</td><td>Info</td></tr>  <tr><td>RETURN</td><td>Return</td></tr>  <tr><td>RED, GREEN, YELLOW, CYAN</td><td>Colour buttons</td></tr>  <tr><td>PLAY, PAUSE, STOP, RECORD< FF, FF_, REWIND, REWIND_</td><td>Transports</td></tr>  <tr><td>PLAY, PAUSE, STOP, RECORD< FF, FF_, REWIND, REWIND_</td><td>Transports</td></tr>  <tr><td>TV</td><td>TV</td></tr>  <tr><td>HDMI</td><td>HDMI 1</td></tr></table>
 
 **Kind**: static property of <code>[SamsungRemote](#SamsungRemote)</code>  
 <a name="SamsungRemote.chr"></a>

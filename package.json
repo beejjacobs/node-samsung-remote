@@ -1,11 +1,10 @@
 {
   "name": "node-samsung-remote",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "node test/test.js",
     "test-with-device": "node test/test-with-device.js",
-    "test-all": "node test/test-all.js",
     "jsdoc2md": "jsdoc2md --src lib/node-samsung-remote.js > docs/README.md"
   },
   "licenses": [

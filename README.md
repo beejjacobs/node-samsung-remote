@@ -4,17 +4,15 @@ Based on the [samsung-remote](https://github.com/natalan/samsung-remote) module.
 
 Tested with a Samsung UE39F5300.
 
-See docs/README.md for functions and detailed usage.
+See docs/README.md for all functions and detailed usage.
 
 Getting Started
 -----
 
 ```javascript
 let SamsungRemote = require('node-samsung-remote');
-let remote = new SamsungRemote({
-    ip: '192.168.0.102',
-    commandInterval: 500
-});
+//ip address is the minimum required
+let remote = new SamsungRemote({ip: '192.168.0.102'});
 
 //Set the channel number
 remote.setChannel(104);

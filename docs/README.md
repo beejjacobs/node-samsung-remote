@@ -17,10 +17,23 @@ Samsung Remote class
         * [.commandBuffer](#SamsungRemote+commandBuffer) : <code>Array</code>
         * [.processing](#SamsungRemote+processing) : <code>boolean</code>
         * [.timer](#SamsungRemote+timer) : <code>object</code>
+        * [.source()](#SamsungRemote+source)
         * [.setChannel(channel)](#SamsungRemote+setChannel)
+        * [.number(number)](#SamsungRemote+number)
         * [.volume(up)](#SamsungRemote+volume)
+        * [.mute()](#SamsungRemote+mute)
         * [.channel(up)](#SamsungRemote+channel)
         * [.arrow(direction)](#SamsungRemote+arrow)
+        * [.smartHub()](#SamsungRemote+smartHub)
+        * [.menu()](#SamsungRemote+menu)
+        * [.guide()](#SamsungRemote+guide)
+        * [.tools()](#SamsungRemote+tools)
+        * [.info()](#SamsungRemote+info)
+        * [.back()](#SamsungRemote+back)
+        * [.exit()](#SamsungRemote+exit)
+        * [.enter()](#SamsungRemote+enter)
+        * [.colours(colour)](#SamsungRemote+colours)
+        * [.transport(command)](#SamsungRemote+transport)
         * [.send(command)](#SamsungRemote+send)
         * [.processBuffer()](#SamsungRemote+processBuffer)
         * [.sendToDevice(command)](#SamsungRemote+sendToDevice)
@@ -82,6 +95,9 @@ Samsung Remote class
 ### samsungRemote.timer : <code>object</code>
 **Kind**: instance property of <code>[SamsungRemote](#SamsungRemote)</code>  
 **Default**: <code></code>  
+<a name="SamsungRemote+source"></a>
+### samsungRemote.source()
+**Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
 <a name="SamsungRemote+setChannel"></a>
 ### samsungRemote.setChannel(channel)
 Set a channel number
@@ -92,9 +108,19 @@ Set a channel number
 | --- | --- |
 | channel | <code>Number</code> | 
 
+<a name="SamsungRemote+number"></a>
+### samsungRemote.number(number)
+Number key
+
+**Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| number | <code>Number</code> &#124; <code>string</code> | 0-9 |
+
 <a name="SamsungRemote+volume"></a>
 ### samsungRemote.volume(up)
-Volume up/daown
+Volume up/down
 
 **Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
 
@@ -102,6 +128,9 @@ Volume up/daown
 | --- | --- | --- |
 | up | <code>boolean</code> | True to increase volume, false to decrease |
 
+<a name="SamsungRemote+mute"></a>
+### samsungRemote.mute()
+**Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
 <a name="SamsungRemote+channel"></a>
 ### samsungRemote.channel(up)
 Channel up/down
@@ -110,7 +139,7 @@ Channel up/down
 
 | Param | Type | Description |
 | --- | --- | --- |
-| up | <code>boolean</code> | True for next channel, false for previous |
+| up | <code>boolean</code> | true for next channel, false for previous |
 
 <a name="SamsungRemote+arrow"></a>
 ### samsungRemote.arrow(direction)
@@ -121,6 +150,50 @@ Arrow keys
 | Param | Type | Description |
 | --- | --- | --- |
 | direction | <code>string</code> | left,right,up,down |
+
+<a name="SamsungRemote+smartHub"></a>
+### samsungRemote.smartHub()
+**Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
+<a name="SamsungRemote+menu"></a>
+### samsungRemote.menu()
+**Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
+<a name="SamsungRemote+guide"></a>
+### samsungRemote.guide()
+**Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
+<a name="SamsungRemote+tools"></a>
+### samsungRemote.tools()
+**Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
+<a name="SamsungRemote+info"></a>
+### samsungRemote.info()
+**Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
+<a name="SamsungRemote+back"></a>
+### samsungRemote.back()
+**Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
+<a name="SamsungRemote+exit"></a>
+### samsungRemote.exit()
+**Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
+<a name="SamsungRemote+enter"></a>
+### samsungRemote.enter()
+**Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
+<a name="SamsungRemote+colours"></a>
+### samsungRemote.colours(colour)
+Colour buttons (also labelled A,B,C,D)
+
+**Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| colour | <code>string</code> | red,green,yellow,blue || a,b,c,d |
+
+<a name="SamsungRemote+transport"></a>
+### samsungRemote.transport(command)
+Transport keys
+
+**Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| command | <code>string</code> | play,pause,stop,record,forward,backward,skip-forward,skip-backward |
 
 <a name="SamsungRemote+send"></a>
 ### samsungRemote.send(command)

@@ -28,22 +28,44 @@ remote.send(undefined);
 remote.send(null);
 remote.send('');
 
+remote.source();
+
 //test the command buffer and commandInterval
 for(let i = 0; i < 10; i++) {
-  remote.send(Samsung.numbers[i]);
+  remote.number(i);
 }
 
-//test set channel
 remote.setChannel(104);
 
-//test volume and channel
 remote.volume(true);
 remote.volume(false);
+remote.mute();
 remote.channel(true);
 remote.channel(false);
 
-//test arrow keys
 remote.arrow('left');
 remote.arrow('right');
 remote.arrow('up');
 remote.arrow('down');
+
+remote.smartHub();
+remote.menu();
+remote.guide();
+remote.tools();
+remote.info();
+remote.back();
+remote.exit();
+remote.enter();
+
+remote.colours('red');
+remote.colours('green');
+remote.colours('yellow');
+remote.colours('blue');
+
+remote.transport('play');
+remote.transport('pause');
+remote.transport('stop');
+remote.transport('backward');
+remote.transport('forward');
+remote.transport('skip-backward');
+remote.transport('record');

@@ -38,8 +38,7 @@ Samsung Remote class
         * [.send(command)](#SamsungRemote+send)
         * [.processBuffer()](#SamsungRemote+processBuffer)
         * [.sendToDevice(command)](#SamsungRemote+sendToDevice)
-        * [.messageFirst()](#SamsungRemote+messageFirst) ⇒ <code>string</code>
-        * [.messageSecond(command)](#SamsungRemote+messageSecond) ⇒ <code>string</code>
+        * [.buildMessage(command)](#SamsungRemote+buildMessage) ⇒ <code>object</code>
         * [.log(message)](#SamsungRemote+log)
         * [.error(message)](#SamsungRemote+error)
     * _static_
@@ -234,16 +233,12 @@ Send the command to the device
 | --- | --- |
 | command | <code>string</code> | 
 
-<a name="SamsungRemote+messageFirst"></a>
-### samsungRemote.messageFirst() ⇒ <code>string</code>
-First section of the encoded command
+<a name="SamsungRemote+buildMessage"></a>
+### samsungRemote.buildMessage(command) ⇒ <code>object</code>
+Encode the command
 
 **Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
-<a name="SamsungRemote+messageSecond"></a>
-### samsungRemote.messageSecond(command) ⇒ <code>string</code>
-Second section of the encoded command
-
-**Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
+**Returns**: <code>object</code> - message  
 
 | Param | Type |
 | --- | --- |

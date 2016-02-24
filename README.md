@@ -1,6 +1,31 @@
 # Node.js Samsung Smart TV Remote
 
-Based on: [samsung-remote](https://github.com/natalan/samsung-remote)
+Based on the [samsung-remote](https://github.com/natalan/samsung-remote) module.
+
+Tested with a Samsung UE39F5300.
+
+See docs/README.md for functions and detailed usage.
+
+Getting Started
+-----
+
+```javascript
+let SamsungRemote = require('node-samsung-remote');
+let remote = new SamsungRemote({
+    ip: '192.168.0.102',
+    commandInterval: 500
+});
+
+//Set the channel number
+remote.setChannel(104);
+
+//Increase the volume
+remote.volume(true);
+
+//Go to the Smart Hub
+remote.smartHub();
+
+```
 
 License
 -----

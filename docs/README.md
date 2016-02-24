@@ -140,7 +140,7 @@ Volume up/down
 
 | Param | Type | Description |
 | --- | --- | --- |
-| up | <code>boolean</code> | True to increase volume, false to decrease |
+| up | <code>boolean</code> | true to increase volume, false to decrease |
 
 <a name="SamsungRemote+mute"></a>
 ### samsungRemote.mute()
@@ -197,7 +197,7 @@ Colour buttons (also labelled A,B,C,D)
 
 | Param | Type | Description |
 | --- | --- | --- |
-| colour | <code>string</code> | red,green,yellow,blue || a,b,c,d |
+| colour | <code>string</code> | red, green, yellow, blue, a, b, c, d |
 
 <a name="SamsungRemote+transport"></a>
 ### samsungRemote.transport(command)
@@ -207,7 +207,7 @@ Transport keys
 
 | Param | Type | Description |
 | --- | --- | --- |
-| command | <code>string</code> | play,pause,stop,record,forward,backward,skip-forward,skip-backward |
+| command | <code>string</code> | play, pause, stop, record, forward, backward, skip-forward, skip-backward |
 
 <a name="SamsungRemote+send"></a>
 ### samsungRemote.send(command)

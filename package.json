@@ -1,5 +1,8 @@
 {
   "name": "node-samsung-remote",
   "version": "0.0.1",
-  "main": "index.js"
+  "main": "index.js",
+  "scripts": {
+    "jsdoc2md": "jsdoc2md --src lib/node-samsung-remote.js > docs/README.md"
+  }
 }

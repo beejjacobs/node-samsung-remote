@@ -30,7 +30,7 @@ remote.send('');
 
 //test the command buffer and commandInterval
 for(let i = 0; i < 10; i++) {
-  remote.send(i);
+  remote.send(Samsung.numbers[i]);
 }
 
 //test set channel

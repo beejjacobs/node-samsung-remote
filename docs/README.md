@@ -120,7 +120,7 @@ Arrow keys
 
 | Param | Type | Description |
 | --- | --- | --- |
-| direction | <code>string</code> | left|right|up|down |
+| direction | <code>string</code> | left,right,up,down |
 
 <a name="SamsungRemote+send"></a>
 ### samsungRemote.send(command)

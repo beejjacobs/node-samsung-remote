@@ -4,6 +4,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node test/test.js",
+    "test-with-device": "node test/test-with-device.js",
     "jsdoc2md": "jsdoc2md --src lib/node-samsung-remote.js > docs/README.md"
   }
 }

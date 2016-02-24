@@ -22,9 +22,13 @@ class Test extends Samsung {
   }
 }
 
-//test the command buffer and commandInterval
 var remote = new Test({commandInterval: 100});
 
+remote.send(undefined);
+remote.send(null);
+remote.send('');
+
+//test the command buffer and commandInterval
 for(let i = 0; i < 10; i++) {
   remote.send(i);
 }
@@ -37,3 +41,9 @@ remote.volume(true);
 remote.volume(false);
 remote.channel(true);
 remote.channel(false);
+
+//test arrow keys
+remote.arrow('left');
+remote.arrow('right');
+remote.arrow('up');
+remote.arrow('down');

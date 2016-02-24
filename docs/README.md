@@ -20,6 +20,7 @@ Samsung Remote class
         * [.setChannel(channel)](#SamsungRemote+setChannel)
         * [.volume(up)](#SamsungRemote+volume)
         * [.channel(up)](#SamsungRemote+channel)
+        * [.arrow(direction)](#SamsungRemote+arrow)
         * [.send(command)](#SamsungRemote+send)
         * [.processBuffer()](#SamsungRemote+processBuffer)
         * [.sendToDevice(command)](#SamsungRemote+sendToDevice)
@@ -93,23 +94,33 @@ Set a channel number
 
 <a name="SamsungRemote+volume"></a>
 ### samsungRemote.volume(up)
-True to increase volume, false to decrease
+Volume up/daown
 
 **Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
 
-| Param | Type |
-| --- | --- |
-| up | <code>boolean</code> | 
+| Param | Type | Description |
+| --- | --- | --- |
+| up | <code>boolean</code> | True to increase volume, false to decrease |
 
 <a name="SamsungRemote+channel"></a>
 ### samsungRemote.channel(up)
-True for next channel, false for previous
+Channel up/down
 
 **Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
 
-| Param | Type |
-| --- | --- |
-| up | <code>boolean</code> | 
+| Param | Type | Description |
+| --- | --- | --- |
+| up | <code>boolean</code> | True for next channel, false for previous |
+
+<a name="SamsungRemote+arrow"></a>
+### samsungRemote.arrow(direction)
+Arrow keys
+
+**Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| direction | <code>string</code> | left|right|up|down |
 
 <a name="SamsungRemote+send"></a>
 ### samsungRemote.send(command)

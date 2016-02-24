@@ -22,7 +22,7 @@ class Test extends Samsung {
   }
 }
 
-var remote = new Test({commandInterval: 100});
+var remote = new Test({commandInterval: 100, debug: true});
 
 remote.send(undefined);
 remote.send(null);

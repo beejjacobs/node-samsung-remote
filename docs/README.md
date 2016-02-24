@@ -7,6 +7,7 @@ Samsung Remote class
 * [SamsungRemote](#SamsungRemote)
     * [new SamsungRemote(config)](#new_SamsungRemote_new)
     * _instance_
+        * [.debug](#SamsungRemote+debug) : <code>boolean</code>
         * [.ip](#SamsungRemote+ip) : <code>string</code>
         * [.port](#SamsungRemote+port) : <code>Number</code>
         * [.timeout](#SamsungRemote+timeout) : <code>Number</code>
@@ -39,6 +40,8 @@ Samsung Remote class
         * [.sendToDevice(command)](#SamsungRemote+sendToDevice)
         * [.messageFirst()](#SamsungRemote+messageFirst) ⇒ <code>string</code>
         * [.messageSecond(command)](#SamsungRemote+messageSecond) ⇒ <code>string</code>
+        * [.log(message)](#SamsungRemote+log)
+        * [.error(message)](#SamsungRemote+error)
     * _static_
         * [.numbers](#SamsungRemote.numbers) : <code>object</code>
         * [.keys](#SamsungRemote.keys) : <code>object</code>
@@ -61,7 +64,11 @@ Samsung Remote class
 | [config.appString] | <code>string</code> | app string sent to the TV |
 | [config.tvAppString] | <code>string</code> | tv string sent to the TV |
 | [config.commandInterval] | <code>Number</code> | minimum interval between commands |
+| [config.debug] | <code>boolean</code> |  |
 
+<a name="SamsungRemote+debug"></a>
+### samsungRemote.debug : <code>boolean</code>
+**Kind**: instance property of <code>[SamsungRemote](#SamsungRemote)</code>  
 <a name="SamsungRemote+ip"></a>
 ### samsungRemote.ip : <code>string</code>
 **Kind**: instance property of <code>[SamsungRemote](#SamsungRemote)</code>  
@@ -234,6 +241,26 @@ Second section of the encoded command
 | Param | Type |
 | --- | --- |
 | command | <code>string</code> | 
+
+<a name="SamsungRemote+log"></a>
+### samsungRemote.log(message)
+Log to console.log if this.debug is true
+
+**Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
+
+| Param | Type |
+| --- | --- |
+| message | <code>\*</code> | 
+
+<a name="SamsungRemote+error"></a>
+### samsungRemote.error(message)
+Log to console.error if this.debug is true
+
+**Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
+
+| Param | Type |
+| --- | --- |
+| message | <code>\*</code> | 
 
 <a name="SamsungRemote.numbers"></a>
 ### SamsungRemote.numbers : <code>object</code>

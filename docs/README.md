@@ -33,7 +33,7 @@ Samsung Remote class
         * [.back()](#SamsungRemote+back)
         * [.exit()](#SamsungRemote+exit)
         * [.enter()](#SamsungRemote+enter)
-        * [.colours(colour)](#SamsungRemote+colours)
+        * [.colour(colour)](#SamsungRemote+colour)
         * [.transport(command)](#SamsungRemote+transport)
         * [.send(command)](#SamsungRemote+send)
         * [.processBuffer()](#SamsungRemote+processBuffer)
@@ -69,27 +69,34 @@ Samsung Remote class
 <a name="SamsungRemote+debug"></a>
 ### samsungRemote.debug : <code>boolean</code>
 **Kind**: instance property of <code>[SamsungRemote](#SamsungRemote)</code>  
+**Default**: <code>false</code>  
 <a name="SamsungRemote+ip"></a>
 ### samsungRemote.ip : <code>string</code>
 **Kind**: instance property of <code>[SamsungRemote](#SamsungRemote)</code>  
 <a name="SamsungRemote+port"></a>
 ### samsungRemote.port : <code>Number</code>
 **Kind**: instance property of <code>[SamsungRemote](#SamsungRemote)</code>  
+**Default**: <code>55000</code>  
 <a name="SamsungRemote+timeout"></a>
 ### samsungRemote.timeout : <code>Number</code>
 **Kind**: instance property of <code>[SamsungRemote](#SamsungRemote)</code>  
+**Default**: <code>5000</code>  
 <a name="SamsungRemote+host"></a>
 ### samsungRemote.host : <code>Object</code>
 **Kind**: instance property of <code>[SamsungRemote](#SamsungRemote)</code>  
+**Default**: <code>{ip: &quot;127.0.0.1&quot;, mac: &quot;00:00:00:00&quot;, name: &quot;NodeJS Samsung Remote&quot;}</code>  
 <a name="SamsungRemote+appString"></a>
 ### samsungRemote.appString : <code>string</code>
 **Kind**: instance property of <code>[SamsungRemote](#SamsungRemote)</code>  
+**Default**: <code>&quot;iphone..iapp.samsung&quot;</code>  
 <a name="SamsungRemote+tvAppString"></a>
 ### samsungRemote.tvAppString : <code>string</code>
 **Kind**: instance property of <code>[SamsungRemote](#SamsungRemote)</code>  
+**Default**: <code>&quot;iphone.UN60D6000.iapp.samsung&quot;</code>  
 <a name="SamsungRemote+commandInterval"></a>
 ### samsungRemote.commandInterval : <code>Number</code>
 **Kind**: instance property of <code>[SamsungRemote](#SamsungRemote)</code>  
+**Default**: <code>500</code>  
 <a name="SamsungRemote+commandBuffer"></a>
 ### samsungRemote.commandBuffer : <code>Array</code>
 **Kind**: instance property of <code>[SamsungRemote](#SamsungRemote)</code>  
@@ -101,7 +108,7 @@ Samsung Remote class
 <a name="SamsungRemote+timer"></a>
 ### samsungRemote.timer : <code>object</code>
 **Kind**: instance property of <code>[SamsungRemote](#SamsungRemote)</code>  
-**Default**: <code></code>  
+**Default**: <code>null</code>  
 <a name="SamsungRemote+source"></a>
 ### samsungRemote.source()
 **Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
@@ -182,8 +189,8 @@ Arrow keys
 <a name="SamsungRemote+enter"></a>
 ### samsungRemote.enter()
 **Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  
-<a name="SamsungRemote+colours"></a>
-### samsungRemote.colours(colour)
+<a name="SamsungRemote+colour"></a>
+### samsungRemote.colour(colour)
 Colour buttons (also labelled A,B,C,D)
 
 **Kind**: instance method of <code>[SamsungRemote](#SamsungRemote)</code>  

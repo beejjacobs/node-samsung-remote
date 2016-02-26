@@ -69,3 +69,5 @@ remote.transport('backward');
 remote.transport('forward');
 remote.transport('skip-backward');
 remote.transport('record');
+
+remote.previousChannel();

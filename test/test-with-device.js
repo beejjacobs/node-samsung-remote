@@ -11,10 +11,10 @@ for(let i = 0; i < 10; i++) {
 remote.setChannel(104);
 
 //test volume and channel
-remote.volume(true);
-remote.volume(false);
-remote.channel(true);
-remote.channel(false);
+remote.volumeUp();
+remote.volumeDown();
+remote.channelUp();
+remote.channelDown();
 
 //test arrow keys
 remote.arrow('left');
@@ -23,11 +23,11 @@ remote.arrow('up');
 remote.arrow('down');
 
 for(let i = 0; i < 5; i++) {
-  remote.volume(false);
+  remote.volumeDown();
 }
 
 for(let i = 0; i < 5; i++) {
-  remote.volume(true);
+  remote.volumeUp();
 }
 
 remote.send(Samsung.keys.TV);

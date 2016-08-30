@@ -18,7 +18,7 @@ let remote = new SamsungRemote({ip: '192.168.0.102'});
 remote.setChannel(104);
 
 //Increase the volume
-remote.volume(true);
+remote.volumeUp();
 
 //Go to the Smart Hub
 remote.smartHub();

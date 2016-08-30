@@ -37,11 +37,11 @@ for(let i = 0; i < 10; i++) {
 
 remote.setChannel(104);
 
-remote.volume(true);
-remote.volume(false);
+remote.volumeUp();
+remote.volumeDown();
 remote.mute();
-remote.channel(true);
-remote.channel(false);
+remote.channelUp();
+remote.channelDown();
 
 remote.arrow('left');
 remote.arrow('right');

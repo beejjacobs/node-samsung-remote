@@ -1,6 +1,6 @@
 {
   "name": "node-samsung-remote",
-  "version": "0.9.0",
+  "version": "1.0.0",
   "main": "index.js",
   "author": {
     "name": "Ben Jacobs",

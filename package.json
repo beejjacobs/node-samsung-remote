@@ -1,16 +1,22 @@
 {
   "name": "node-samsung-remote",
-  "version": "1.0.0",
+  "version": "0.9.0",
   "main": "index.js",
+  "author": {
+    "name": "Ben Jacobs",
+    "email": "ben@benjacobs.co.uk"
+  },
   "scripts": {
     "test": "node test/test.js",
     "test-with-device": "node test/test-with-device.js",
     "jsdoc2md": "jsdoc2md --src lib/node-samsung-remote.js > docs/README.md"
   },
-  "licenses": [
-    {
-      "type": "MIT",
-      "url": "http://www.opensource.org/licenses/MIT"
-    }
-  ]
+  "license": "MIT",
+  "devDependencies": {
+    "jsdoc-to-markdown": "^1.3.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/beejjacobs/node-samsung-remote.git"
+  }
 }

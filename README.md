@@ -6,6 +6,8 @@ Tested with a Samsung UE39F5300.
 
 See docs/README.md for all functions and detailed usage.
 
+[node-samsung-remote-app](https://github.com/beejjacobs/node-samsung-remote-app) is a web-app front end built using this module.
+
 Getting Started
 -----
 
